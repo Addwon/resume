@@ -37,6 +37,7 @@ public class Resume {
     @Size(min=5)
     private String skill;
 
+    private String skill_level;
 
     public long getId() {
         return id;
@@ -86,4 +87,11 @@ public class Resume {
         this.skill = skill;
     }
 
+    public String getSkill_level() {
+        return skill_level;
+    }
+
+    public void setSkill_level(String skill_level) {
+        this.skill_level = skill_level;
+    }
 }

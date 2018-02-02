@@ -25,10 +25,19 @@
    Experience :<textarea rows="3" th:field="*{experience}" />
                <span th:if="${#fields.hasErrors('experience')}"
                th:errors="*{experience}"></span><br /><br />
+<table>
+    <tr>
+        <td>Skills    :<textarea rows="3" th:field="*{skill}" />
+            <span th:if="${#fields.hasErrors('skill')}"
+                  th:errors="*{skill}"></span></td>
+        <td>Rating: <select th:field="*{skill_level}">
+            <option value="Skilled">Skilled</option>
+            <option value="proficient">proficient</option>
+            <option value="familiar">familiar</option>
+        </select></td>
+    </tr>
+</table>
 
-   Skills    :<textarea rows="3" th:field="*{skill}" />
-              <span th:if="${#fields.hasErrors('skill')}"
-              th:errors="*{skill}"></span><br /><br />
 
     <input type="submit" value="Submit" />
 </form>
