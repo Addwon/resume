@@ -1,5 +1,7 @@
 package com.week2challenge.resume;
 
+import org.hibernate.validator.constraints.Email;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,6 +21,7 @@ public class Resume {
     private String name;
 
     @NotNull
+    @Email
     private String email;
 
     @NotNull

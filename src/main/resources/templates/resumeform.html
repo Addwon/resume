@@ -25,9 +25,10 @@
    Experience :<textarea rows="3" th:field="*{experience}" />
                <span th:if="${#fields.hasErrors('experience')}"
                th:errors="*{experience}"></span><br /><br />
-   Skills    :<input type="text" th:field="*{skill}" />
+
+   Skills    :<textarea rows="3" th:field="*{skill}" />
               <span th:if="${#fields.hasErrors('skill')}"
-              th:errors="*{skill}"></span><br /><br /><br />
+              th:errors="*{skill}"></span><br /><br />
 
     <input type="submit" value="Submit" />
 </form>
